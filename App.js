@@ -23,7 +23,7 @@ export default class App extends React.Component {
   }
   render() {
     return (
-      <View style={styles.container}>
+      <View style={ styles.container}>
         <Header
           backgroundColor={'cyan'}
           centerComponent={{
@@ -59,7 +59,7 @@ export default class App extends React.Component {
           }}>
           <Text style={styles.buttonText}>GO</Text>
         </TouchableOpacity>
-        <View>
+        <View style = {{flexDirection:"row", alignSelf: "center"}}>
           {this.state.chunks.map((item, index) => {
             return (
               <PhonicSoundButton
